@@ -1,0 +1,5 @@
+aiofile==3.8.7
+aiosqlite
+httpx==0.24.1
+pre-commit==3.3.3
+streamlit
