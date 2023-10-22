@@ -32,7 +32,7 @@ def rank_candidates(candidates, requirements):
 	problem_list = get_problem_list(requirements.items())
 	for candidate in candidates:
 		ratings = get_elo_ratings(problem_list)
-		candidates_ratings[candidate['email']] = combine_ratings(ratings, requirements.values())
+		candidates_ratings[candidate['handle']] = combine_ratings(ratings, requirements.values())
 	
 	ranked_candidates = sorted(candidates_ratings.items(), key = lambda x: -x[1])
 	return ranked_candidates
